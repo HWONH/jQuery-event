@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery - 이벤트</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h3>클릭 이벤트</h3>
+    <h4>클릭 이벤트간의 주의사항 - href 속성에 의한 페이지 이동을 막아야 하는 경우</h4>
+    <p>1. 스크립트 코드 내부에서 막는 방법1 - 클릭 이벤트를 종료하기 직전에 return false;를 작성한다.</p>
+    <p>2. 스크립트 코드 내부에서 막는 방법2 - 클릭 이벤트 내부에서 실행문들이 시작하기 직전에 매개변수(e)를 설정한 수 e:preventDefault(); => 초기화를 막겠다는 의미로, 새로고침 현상이 발생하지 않는다.</p>
+    <p>3. href의 속성을 제거한다. href="javascript:void(0);" => 자바스크립트에서 제공되는 모든 값을 아무것도 주지 않겠다는 의미</p>
+
+    <div class="click_evt">
+        <ul>
+            <li><a href="javascript:void(0);"></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+        <p class="complete"></p>
+    </div>
+
+    <h3>마우스 관련 이벤트 : mouseover, mouseout, hover(mouseenter, mouseleave)</h3>
+    <div class="mouse_evt">
+        <div class="ch_img"></div>
+    </div>
+
+    <div class="hover_menu">
+        <div class="logo">
+            <a href="">logo</a>
+        </div>
+        <ul>
+            <li>
+                <a href="">About</a>
+                <ul>
+                    <li><a href="">Introduce</a></li>
+                    <li><a href="">Skill</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Project</a>
+                <ul>
+                    <li><a href="">Hanhwa</a></li>
+                    <li><a href="">SK_Innovation</a></li>
+                    <li><a href="">LG_Electronic</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Portfolio</a>
+                <ul>
+                    <li><a href="">Graphic</a></li>
+                    <li><a href="">Publishing</a></li>
+                    <li><a href="">Develop</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Contact</a>
+                <ul>
+                    <li><a href="">E-mail</a></li>
+                    <li><a href="">Phone</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
