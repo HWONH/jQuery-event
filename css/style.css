@@ -30,3 +30,38 @@ a{text-decoration: none;}
 .hover_menu > ul > li > ul{display: none;}
 .hover_menu > ul > li > ul > li{}
 .hover_menu > ul > li > ul > li > a{display: block;line-height: 40px;text-align: center;font-size: 15px;color: #777777;background: #bbbbbb;}
+/* ---------------------------------------------------- */
+.focus_evt{padding: 20px;background-color: #ffffaa;}
+.focus_evt div{padding: 5px 0;font-size: 0;}
+.focus_evt div label{display: inline-block;vertical-align: middle;width: 140px;font-size: 16px;}
+.focus_evt div input{display: inline-block;vertical-align: middle;width: calc(100% - 140px);line-height: 36px;font-size: 16px;}
+
+.msg{position: fixed;top: 0;left: 0;width: 100%;padding: 5px 0;text-align: center;background: #ffaaff;transform: translate(0, -100%);transition: transform 0.5s;}
+.msg.active{transform: translate(0, 0);}
+/* ---------------------------------------------------- */
+.tab_box{width: 1200px;margin: 0 auto;padding: 10px 0;background: #aaffff;}
+.tab_box .tab_btn{padding: 0 10px 10px;}
+.tab_box .tab_btn ul{font-size: 0;text-align: center;}
+.tab_box .tab_btn ul li{display: inline-block;vertical-align: middle;}
+.tab_box .tab_btn ul li a{display: block;line-height: 60px;padding: 0 20px;background: #cccccc;font-size: 17px;text-transform: uppercase;}
+.tab_box .tab_btn ul li.active_btn a{background: #000000;color: #ffffff;}
+
+.tab_box .tab_cont{border-top: 1px solid #000;}
+.tab_box .tab_cont .tab{display: none;padding: 10px 0 0;}
+.tab_box .tab_cont .tab.active_cont{display: block;}
+.tab_box .tab_cont .tab:after{content: "";display: block;clear: both;}
+.tab_box .tab_cont .tab div{float: left;width: calc(100% / 3 - 20px);height: 380px;margin: 0 10px;background-size: cover;background-position: 50%;}
+.tab_box .tab_cont .tab_01 div:nth-child(1){background-image: url(../img/img_01.jpg);}
+.tab_box .tab_cont .tab_01 div:nth-child(2){background-image: url(../img/img_02.jpg);}
+.tab_box .tab_cont .tab_01 div:nth-child(3){background-image: url(../img/img_03.jpg);}
+.tab_box .tab_cont .tab_02 div:nth-child(1){background-image: url(../img/img_04.jpg);}
+.tab_box .tab_cont .tab_02 div:nth-child(2){background-image: url(../img/img_05.jpg);}
+.tab_box .tab_cont .tab_02 div:nth-child(3){background-image: url(../img/img_06.jpg);}
+/* ---------------------------------------------------- */
+.game_img{width: 25%;background-image: url(../img/img_06.jpg);background-size: cover;background-position: 50%;}
+/* ---------------------------------------------------- */
+.scroll_evt{width: 240px;height: 240px;background-image: url(../img/img_05.jpg);background-size: cover;background-position: 50%;transform: translateX(-100%);transition: transform 0.5s;margin-bottom: 1000px;}
+.scroll_evt.active{transform: translateX(0);}
+
+body{transition: background 0.5s, color 0.5s;}
+body.ch_black{background: #333333;color: #ffffff;}
